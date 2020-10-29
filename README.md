@@ -4,7 +4,7 @@
 ```
 pip install opencv-python
 ```
--pyyaml
+- pyyaml
 ```
 pip install PyYAML
 ```
