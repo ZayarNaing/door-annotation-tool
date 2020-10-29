@@ -4,6 +4,10 @@
 ```
 pip install opencv-python
 ```
+-pyyaml
+```
+pip install PyYAML
+```
 ## To run
 ```
 python main.py --video <path-to-video>
