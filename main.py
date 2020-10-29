@@ -49,13 +49,14 @@ cv2.setMouseCallback("image", shape_selection)
 
 
 # keep looping until the 'q' key is pressed 
-while True: 
+while True:
 	# display the image and wait for a keypress 
 	cv2.imshow("image", image) 
 	key = cv2.waitKey(1) & 0xFF
 
 	# press 'r' to reset the window 
-	if key == ord("r"): 
+	if key == ord("r"):
+		door_list.clear()
 		image = clone.copy() 
     
 	# if the 'q' key is pressed, break from the loop 
