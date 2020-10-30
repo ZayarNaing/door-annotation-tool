@@ -81,8 +81,8 @@ door_dict = {}
 count = 0
 for i in range(0, len(door_list), 2):
 	tmp = {}
-	tmp["firstcheckpoint"] = door_list[i]
-	tmp["secondcheckpoint"] = door_list[i+1]
+	tmp["firstcheckpoint"] = door_list[i+1]
+	tmp["secondcheckpoint"] = door_list[i]
 	door_dict["Door"+str(count)] = tmp
 	count += 1
 
