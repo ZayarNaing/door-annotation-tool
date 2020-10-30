@@ -29,7 +29,8 @@ def shape_selection(event, x, y, flags, param):
 		# draw a rectangle around the region of interest 
 		cv2.rectangle(image, ref_point[0], ref_point[1], (0, 255, 0), 2)
 
-		door_list.append([ref_point[0][1], ref_point[1][1], ref_point[0][0], ref_point[1][0]])
+		#door_list.append([ref_point[0][1], ref_point[1][1], ref_point[0][0], ref_point[1][0]])
+		door_list.append([ref_point[0][0], ref_point[0][1], ref_point[1][0], ref_point[1][1]])
 		cv2.imshow("image", image) 
 
 # construct the argument parser and parse the arguments 
